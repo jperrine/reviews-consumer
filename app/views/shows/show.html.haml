@@ -1,0 +1,14 @@
+%h1= @show.name
+%p= @show.description
+%h2 Reviews
+%ul
+- @show.reviews.each do |review|
+  %li
+    = review.title
+    %br
+    = review.description
+
+
+
+%h3 Review!
+%iframe{src: "http://hack-reviews.herokuapp.com/widgets?key=#{@show.widget_key}", width: 350, height: 450}

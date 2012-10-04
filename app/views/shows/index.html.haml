@@ -1,0 +1,9 @@
+%h1 Listing Shows
+%table
+  %tr
+    %th Name
+    %th
+  - @shows.each do |show|
+    %tr
+      %td= show.name
+      %td= link_to 'Show', show

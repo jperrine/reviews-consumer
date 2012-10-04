@@ -6,7 +6,8 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'haml'
+gem 'faraday'
 
 group :development, :test do
   gem 'mysql2'
